@@ -12,8 +12,9 @@
         :root {
             --background-color: #f8f9fa;     /* Page background */
             --background-image-url: url('https://files.catbox.moe/dxv88z.jpg'); /* Change this to your image URL */
+            --background-header-url: url('https://files.catbox.moe/dxv88z.jpg'); /* Change this to your image URL */
             --header-bg-color: #FF0511;      /* Top header background */
-            --header-text-color: #F77777;    /* Top header text color */
+            --header-text-color: #000000;    /* Top header text color */
             --nav-bg-color: #660404;         /* Navigation bar background */
             --nav-link-color: #080000;       /* Navigation link text */
             --nav-link-hover: #FA0000;       /* Navigation link hover color */
@@ -46,6 +47,10 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+             background-image: var(--background-header-url);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
         }
 
         #top-header img {
