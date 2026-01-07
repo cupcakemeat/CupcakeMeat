@@ -109,6 +109,51 @@
         html {
             scroll-behavior: smooth;
         }
+            .corner-blood {
+  position: fixed;
+  top: 165px; /* distance from top */
+  right: 42px; /* distance from right edge */
+  z-index: 9999; /* on top of everything */
+  transform: rotate(10deg); /* hard \ slant – make it -20deg for even more extreme */
+  transform-origin: top right;
+  pointer-events: none; /* so it doesn’t block clicks underneath */
+}
+.bloodyshake {
+  background: linear-gradient(180deg,
+    #6E0153 0%,
+    #6E0153 30%,
+    #6E0153 50%,
+    #6E0153 70%,
+    #6AFF05 100%
+  );
+  background-size: 100% 300%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #6AFF05;
+  font-size: 2.5em;
+  font-weight: bold;
+  text-shadow:
+    0 5px 15px #FF05D5,
+    0 20px 30px #6AFF05;
+  white-space: nowrap; /* keeps it on one line */
+ 
+  /* still shaking like it’s possessed */
+  animation: tremble 0.20s linear infinite;
+}
+@keyframes tremble {
+  0% { transform: translate(0, 0); }
+  10% { transform: translate(-3px, -3px); }
+  20% { transform: translate(3px, -2px); }
+  30% { transform: translate(-3px, 2px); }
+  40% { transform: translate(3px, 3px); }
+  50% { transform: translate(-2px, -3px); }
+  60% { transform: translate(2px, 3px); }
+  70% { transform: translate(-3px, -2px); }
+  80% { transform: translate(3px, 2px); }
+  90% { transform: translate(-2px, -2px); }
+  100% { transform: translate(0, 0); }
+}
     </style>
 </head>
 <body>
@@ -159,6 +204,8 @@
         <h2>Section 5</h2>
         <p>Add your content here for Section 5.</p>
     </section>
-
+<div class="corner-blood">
+  <div class="bloodyshake">follow my insta!!!@sai_the_flu</div>
+</div>
 </body>
 </html>
