@@ -1,4 +1,4 @@
-## Hi there 👋
+## helloo im working on a little html website for self use, its supposed to be a type of resource thing for my art commissions! 
 
 <!--
 **cupcakemeat/CupcakeMeat** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
